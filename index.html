@@ -3,6 +3,8 @@
 <head>
     <title>PetLife</title>
     <meta name="descriptiom" content="Garanta uma vida longa e cheia de alegria para seu melhor amigo">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +27,7 @@
     </header>
 
     <main>
-        <section id="inicio">
+        <section id="inicio" data-aos="zoom-in">
             <img src="./img/start-img.svg" alt="" width="580" height="580">
 
             <div>
@@ -41,7 +43,7 @@
         </section>
 
         <section id="clinica">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="300">
                 <h2>Cuidado Veterinario de Qualidade</h2>
                 <p class="paragrafo">Nossa clínica é o local onde a paixão pelos animais se une à excelência em cuidados veterinários,
                     sob a liderança da Dra. Vivien Reid, uma profissional altamente qualificada e comprometida,
@@ -60,13 +62,15 @@
                 </ul>
             </div>
 
-            <img src="./img/clinic-img.svg" alt="" width="480" height="480" loading="lazy">
+            <img src="./img/clinic-img.svg" alt="" width="480" height="480" loading="lazy" 
+            data-aos="fade-left" data-aos-duration="600">
         </section>
 
         <section id="farmacia">
-            <h2>Venha conferir o nosso petshop e farmácia</h2>
-            <img src="./img/shop-img.svg" alt="" width="645" , height="430" , loading="lazy">
-            <p class="paragrafo">Além de ser uma clínica veterinária de confiança, também contamos com um completo petshop e farmácia.
+            <h2 data-aos="fade-down" data-aos-duration="300">Venha conferir o nosso petshop e farmácia</h2>
+            <img src="./img/shop-img.svg" alt="" width="645" , height="430" , loading="lazy"
+            data-aos="fade-down" data-aos-duration="300">
+            <p class="paragrafo" data-aos="fade-up" data-aos-duration="600">Além de ser uma clínica veterinária de confiança, também contamos com um completo petshop e farmácia.
                 Nosso pet shop oferece uma ampla seleção de produtos de alta qualidade, desde alimentos balanceados
                 e petiscos deliciosos até brinquedos divertidos e acessórios elegantes para seu pet. Na nossa farmácia
                 você encontrará uma variedade de medicamentos, produtos de cuidados e suplementos recomendados pelos
@@ -78,11 +82,11 @@
         </section>
 
         <section id="duvidas">
-            <img src="img/faq-img.svg" alt="" width="540" height="540" loading="lazy">
+            <img data-aos="zoom-in" src="img/faq-img.svg" alt="" width="540" height="540" loading="lazy">
             <div>
-                <h2>Ficou alguma duvida?</h2>
+                <h2 data-aos="fade-up" data-aos-duration="100" >Ficou alguma duvida?</h2>
 
-                <div class="duvida">
+                <div class="duvida" data-aos="fade-up" data-aos-duration="300">
                     <h3>Quais serviços são oferecidos pela clínica da PetLife?</h3>
                     <img src="img/arrow-down.svg" alt="">
                     <p class="paragrafo">A clínica da PetLife oferece uma ampla gama de serviços, incluindo consultas de rotina,
@@ -91,7 +95,7 @@
                         fornecer cuidados abrangentes e personalizados para garantir o bem-estar do seu pet.</p>
                 </div>
 
-                <div class="duvida">
+                <div class="duvida" data-aos="fade-up" data-aos-duration="500">
                     <h3>Quais espécies de animais a clínica veterinária atende?</h3>
                     <img src="img/arrow-down.svg" alt="">
                     <p class="paragrafo">A clínica veterinária da PetLife atende animais de estimação de todas as espécies, incluindo
@@ -100,7 +104,7 @@
                         e dedicado a cada um deles.</p>
                 </div>
 
-                <div class="duvida">
+                <div class="duvida" data-aos="fade-up" data-aos-duration="700">
                     <h3>A clínica da PetLife possui serviços de emergência?</h3>
                     <img src="img/arrow-down.svg" alt="">
                     <p class="paragrafo">Sim, a clínica veterinária da PetLife oferece serviços de emergência 24 horas. Se o seu animal de
@@ -109,7 +113,7 @@
                         o bem estar do seu pet.</p>
                 </div>
 
-                <div class="duvida">
+                <div class="duvida" data-aos="fade-up" data-aos-duration="900">
                     <h3>A clínica oferece serviços de banho e tosa?</h3>
                     <img src="img/arrow-down.svg" alt="">
                     <p class="paragrafo">Sim, a clínica veterinária da PetLife oferece serviços profissionais de banho e tosa. Nossa
@@ -150,6 +154,7 @@
         Deselvolvido por <a href="https://www.linkedin.com/in/anthony-lima-ab785a247/" target="_blank">Anthony Lima e
             Silva</a> na trilha start na progaração da OnebitCode
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

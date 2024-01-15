@@ -28,6 +28,20 @@ header nav a {
     text-decoration: none;
 }
 
+header nav a :hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.07);
+    }
+}
+
 #inicio {
     position: relative;
     display: flex;
@@ -54,6 +68,10 @@ h2 {
     border-radius: 8px;
     color: #fff;
     text-decoration: none;
+}
+
+.botao:hover{
+    animation: scaleButton 0.8s alternate infinite;
 }
 
 .botao-transparente {
