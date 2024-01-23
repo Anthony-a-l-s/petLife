@@ -21,6 +21,7 @@ header {
     padding-bottom: 24px;
 }
 
+
 header nav a {
     color: #fff;
     font-weight: 600;
@@ -28,19 +29,12 @@ header nav a {
     text-decoration: none;
 }
 
-header nav a :hover {
-    animation: scaleButton 0.8s alternate infinite;
+header nav a:hover {
+    color: #b84e40
 }
 
-@keyframes scaleButton {
-    from {
-        transform: scale(1);
-    }
 
-    to {
-        transform: scale(1.07);
-    }
-}
+
 
 #inicio {
     position: relative;
@@ -63,6 +57,7 @@ h2 {
 }
 
 .botao {
+    display: inline-block;
     background-color: #ff725e;
     padding: 16px 32px;
     border-radius: 8px;
@@ -70,16 +65,35 @@ h2 {
     text-decoration: none;
 }
 
-.botao:hover{
+.botao:hover {
     animation: scaleButton 0.8s alternate infinite;
 }
 
+
+.botao-transparente:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+
 .botao-transparente {
+    display: inline-block;
     background-color: transparent;
     padding: 16px 32px;
     color: #ff725e;
     text-underline-offset: 4px;
 }
+
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.07);
+    }
+}
+
 
 .absolute {
     position: absolute;
@@ -141,15 +155,15 @@ h2 {
 
 .duvida .paragrafo {
     border-right: 1px solid #ff725e;
-border-bottom: 1px solid #ff725e;
-border-left: 1px solid #ff725e;
-border-radius: 0 0 8px 8px;
-margin-top: -8px;
-padding: 0 24px;
-height: 0;
-overflow: hidden;
-opacity: 0;
-transition: .2s;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .2s;
 }
 
 .duvida.ativa .paragrafo {
@@ -190,7 +204,7 @@ footer p a {
     text-decoration: none;
 }
 
-#copyright{
+#copyright {
     background-color: #263138;
     text-align: center;
     padding: 24px;
