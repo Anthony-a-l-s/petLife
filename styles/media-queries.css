@@ -1,0 +1,21 @@
+@media screen and (max-width: 1350px) {
+
+    #duvidas {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    #inicio img {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #copyright p{
+        font-size: 5px;
+    }
+}
